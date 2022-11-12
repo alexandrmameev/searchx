@@ -32,7 +32,7 @@ const SearchField = ({ value = '' }) => {
             onClick={() => {setAutoCompleteVisibility(true)}}
             onChange={(e) => {setSearchTerm(e.target.value)}}
             onFocus={() => {setAutoCompleteVisibility(true)}}
-            onBlur={() => {setAutoCompleteVisibility(false)}}
+            //onBlur={() => {setAutoCompleteVisibility(false)}}
             onKeyDown={(e) => {
               if(e.key === 'Enter') navigate(`/search?q=${searchTerm}`);
             }}
@@ -46,12 +46,12 @@ const SearchField = ({ value = '' }) => {
             />
           )}
       </div>
-      <div 
-        className="search-field__autocomplete"
-        style={{ display: autoCompleteVisibility ? 'block' : 'none' }}
-      >
-        <AutoComplete />
-      </div>
+      <AutoComplete 
+        visibility={autoCompleteVisibility}
+        term={searchTerm}
+        setSearchTerm={setSearchTerm}
+        setVisibility={setAutoCompleteVisibility}
+      />
     </div>
   )
 }

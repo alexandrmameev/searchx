@@ -1,0 +1,86 @@
+.autocomplete {
+  &__wrap {
+    background: #fff;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 4px 6px rgba(32, 33, 36, .28);
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    position: absolute;
+    left: -1px;
+    width: calc(100% + 2px);
+
+    &:before {
+      background: #e8eaed;
+      content: '';
+      height: 1px;
+      position: absolute;
+      top: 0;
+      left: 15px;
+      width: calc(100% - 35px);
+    }
+  }
+
+  &__list {
+    max-height: 400px;
+    overflow: auto;
+  }
+
+  &__item {
+    cursor: default;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 6px 50px 6px 40px;
+    position: relative;
+
+    &:hover {
+      background: #eee;
+
+      .btn-remove {
+        display: block;
+      }
+    }
+
+    .icon {
+      height: 15px;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 15px;
+      width: 15px;
+
+      svg {
+        display: block;
+        height: 15px;
+        width: 15px;
+  
+        path {
+          fill: #9aa0a6;
+        }
+      }
+    }
+
+    .btn-remove {
+      background: none;
+      border: none;
+      border-radius: 0;
+      color: #70757a;
+      cursor: pointer;
+      display: none;
+      font-size: 13px;
+      line-height: 13px;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      right: 20px;
+      bottom: 0;
+      transition: .5s;
+
+      &:hover {
+        color: #1558d6;
+        text-decoration: underline;
+      }
+    }
+  }
+}
