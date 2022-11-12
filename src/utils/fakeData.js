@@ -3,148 +3,143 @@ export const searchTerms = ["ability","able","about","above","abroad","absence",
 
 export const searchResults = [
   {
-    term: "water",
-    results: [
-      {
-        link: "https://www.waters.com/",
-        title: "Waters Corporation: The Science of What's Possible",
-        description: "Waters is the leading provider of lab equipment, supplies and software for scientists across the world. Easily research and order everything your lab needs!"
-      },
-      {
-        link: "https://en.wikipedia.org/wiki/Water",
-        title: "Water - Wikipedia",
-        description: "Water is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and ..."
-      },
-      {
-        link: "https://pubchem.ncbi.nlm.nih.gov/compound/Water",
-        title: "Water | H2O - PubChem",
-        description: "Water is an oxygen hydride consisting of an oxygen atom that is covalently bonded to two hydrogen atoms It has a role as an amphiprotic solvent, ..."
-      },
-      {
-        link: "https://www.water.com/",
-        title: "Water.com Bottled Water | Delivery Service",
-        description: "Water.com is the most popular bottled water provider. Buy bottled water for your home and office. Discover coffee and tea selections."
-      },
-      {
-        link: "https://www.britannica.com/science/water",
-        title: "water | Definition, Chemical Formula, Structure, Molecule ...",
-        description: "water, a substance composed of the chemical elements hydrogen and oxygen and existing in gaseous, liquid, and solid states. It is one of the most plentiful ."
-      },
-      {
-        link: "https://www.mdpi.com/journal/water",
-        title: "Water | An Open Access Journal from MDPI",
-        description: "Water 2022, 14(22), 3651; https://doi.org/10.3390/w14223651 (registering DOI) - 12 Nov 2022. Abstract. Dyes are a significant group of organic contaminants ..."
-      },
-      {
-        link: "https://www.usgs.gov/special-topics/water-science-school/science/water-you-water-and-human-body",
-        title: "The Water in You: Water and the Human Body - USGS.gov",
-        description: "Water is of major importance to all living things; in some organisms, up to 90% of their body weight comes from water. Up to 60% of the human adult body is ."
-      },
-      {
-        link: "https://www.unwater.org/",
-        title: "Coordinating the UN's work on water and sanitation",
-        description: "United Nations Water coordinates the efforts of UN entities and international organizations working on water and sanitation issues. The overarching focus of .."
-      },
-      {
-        link: "https://www.who.int/news-room/fact-sheets/detail/drinking-water",
-        title: "Drinking-water - World Health Organization (WHO)",
-        description: "Contaminated water and poor sanitation are linked to transmission of diseases such as cholera, diarrhoea, dysentery, hepatitis A, typhoid and ..."
-      },
-      {
-        link: "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/water/art-20044256",
-        title: "Water: How much should you drink every day? - Mayo Clinic",
-        description: "About 11.5 cups (2.7 liters) of fluids a day for women. These recommendations cover fluids from water, other beverages and food. About 20% of daily fluid intake ..."
-      },
-      {
-        link: "https://www.charitywater.org/",
-        title: "Help bring clean and safe water to every person on the planet ...",
-        description: "charity: water is a nonprofit organization bringing clean and safe water to people around the world."
-      },
-      {
-        link: "https://www.epa.gov/environmental-topics/water-topics",
-        title: "Water Topics | US EPA",
-        description: "When the water in our rivers, lakes, and oceans becomes polluted; it can endanger wildlife, make our drinking water unsafe, and threaten the .."
-      },
-      {
-        link: "https://water.org/",
-        title: "Water.org - Water Charity For Safe Water & Sanitation",
-        description: "Water.org is founded by Gary White & Matt Damon. We make it our mission to provide the world with safe water and sanitation through innovative financial ..."
-      },
-      {
-        link: "https://www.worldbank.org/en/topic/water",
-        title: "Water : Development news, research, data | World Bank",
-        description: "Water. As the world's largest multilateral source of financing for water in developing countries, the World Bank is working closely with partners to achieve “A ..."
-      },
-      {
-        link: "https://www.cdc.gov/healthyweight/healthy_eating/water-and-healthier-drinks.html",
-        title: "Water and Healthier Drinks - CDC",
-        description: "Learn the importance of staying hydrated, the health benefits of drinking water, and how to choose healthier drinks."
-      },
-      {
-        link: "https://www.denverwater.org/",
-        title: "Denver Water: Home",
-        description: "Denver Water proudly serves high-quality water and promotes its efficient use to 1.5 million people in the city of Denver and many surrounding suburbs."
-      },
-      {
-        link: "https://water.weather.gov/",
-        title: "NOAA - National Weather Service - Water",
-        description: "National Weather Service Advanced Hydrologic Prediction Service (AHPS)"
-      },
-      {
-        link: "https://www.ewg.org/tapwater/",
-        title: "EWG Tap Water Database",
-        description: "Since 2013, water utilities' testing has found pollutants in Americans' tap water, according to an EWG drinking water quality analysis of more than 31 ..."
-      },
-      {
-        link: "https://www.healthline.com/nutrition/7-health-benefits-of-water",
-        title: "7 Science-Based Health Benefits of Drinking Enough Water",
-        description: "Being dehydrated can negatively affect your body and brain. Here are 7 evidence-based health benefits of drinking water."
-      },
-      {
-        link: "https://www.ready.gov/water",
-        title: "Water | Ready.gov",
-        description: "Following a disaster, clean drinking water may not be available. Learn how to build a water supply that will meet your family's needs during ..."
-      },
-      {
-        link: "https://water.phila.gov/",
-        title: "Philadelphia Water Department",
-        description: "Whether providing safe water for residents to drink, supplying water for industries to manufacture goods, or protecting the region's water resources, ..."
-      },
-      {
-        link: "https://www.un.org/sustainabledevelopment/water-and-sanitation/",
-        title: "Water and Sanitation - the United Nations",
-        description: "Decades of misuse, poor management, overextraction of groundwater and contamination of freshwater supplies have exacerbated water stress. In addition, countries ..."
-      },
-      {
-        link: "https://www.everydayhealth.com/water-health/water-body-health.aspx",
-        title: "7 Health Benefits of Water Backed by Scientific Research",
-        description: "Your body uses water in all its cells, organs, and tissues to help regulate temperature and maintain other bodily functions. Because your body ..."
-      },
-      {
-        link: "https://www.saws.org/",
-        title: "San Antonio Water System: Home",
-        description: "SAWS provides water and wastewater services to more than 2 million customers in the San Antonio region and continues to set the standard for service and ..."
-      },
-      {
-        link: "https://www.wsscwater.com/",
-        title: "WSSC Water: Homepage",
-        description: "WSSC Water delivers clean drinking water to almost 2 million people in Montgomery and Prince George's counties with zero quality violations in 100+ years."
-      },
-      {
-        link: "https://www.worldwaterday.org/",
-        title: "World Water Day 2022",
-        description: "World Water Day, held on 22 March every year since 1993, celebrates water and raises awareness of the 2 billion people living without access to safe water."
-      },
-      {
-        link: "https://www.kcwater.us/",
-        title: "KC Water",
-        description: "Water Quality · Financial Assistance Resources · Report An Issue · Understanding My Bill · Community Outreach · By the Numbers · Latest Tweets."
-      },
-      {
-        link: "https://www.calwater.com/",
-        title: "California Water Service",
-        description: "Home page for California Water Service's customer web site, including a link to the account-management portal."
-      }
-    ]
+    link: "https://www.waters.com/",
+    title: "Waters Corporation: The Science of What's Possible",
+    description: "Waters is the leading provider of lab equipment, supplies and software for scientists across the world. Easily research and order everything your lab needs!"
+  },
+  {
+    link: "https://en.wikipedia.org/wiki/Water",
+    title: "Water - Wikipedia",
+    description: "Water is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and ..."
+  },
+  {
+    link: "https://pubchem.ncbi.nlm.nih.gov/compound/Water",
+    title: "Water | H2O - PubChem",
+    description: "Water is an oxygen hydride consisting of an oxygen atom that is covalently bonded to two hydrogen atoms It has a role as an amphiprotic solvent, ..."
+  },
+  {
+    link: "https://www.water.com/",
+    title: "Water.com Bottled Water | Delivery Service",
+    description: "Water.com is the most popular bottled water provider. Buy bottled water for your home and office. Discover coffee and tea selections."
+  },
+  {
+    link: "https://www.britannica.com/science/water",
+    title: "water | Definition, Chemical Formula, Structure, Molecule ...",
+    description: "water, a substance composed of the chemical elements hydrogen and oxygen and existing in gaseous, liquid, and solid states. It is one of the most plentiful ."
+  },
+  {
+    link: "https://www.mdpi.com/journal/water",
+    title: "Water | An Open Access Journal from MDPI",
+    description: "Water 2022, 14(22), 3651; https://doi.org/10.3390/w14223651 (registering DOI) - 12 Nov 2022. Abstract. Dyes are a significant group of organic contaminants ..."
+  },
+  {
+    link: "https://www.usgs.gov/special-topics/water-science-school/science/water-you-water-and-human-body",
+    title: "The Water in You: Water and the Human Body - USGS.gov",
+    description: "Water is of major importance to all living things; in some organisms, up to 90% of their body weight comes from water. Up to 60% of the human adult body is ."
+  },
+  {
+    link: "https://www.unwater.org/",
+    title: "Coordinating the UN's work on water and sanitation",
+    description: "United Nations Water coordinates the efforts of UN entities and international organizations working on water and sanitation issues. The overarching focus of .."
+  },
+  {
+    link: "https://www.who.int/news-room/fact-sheets/detail/drinking-water",
+    title: "Drinking-water - World Health Organization (WHO)",
+    description: "Contaminated water and poor sanitation are linked to transmission of diseases such as cholera, diarrhoea, dysentery, hepatitis A, typhoid and ..."
+  },
+  {
+    link: "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/water/art-20044256",
+    title: "Water: How much should you drink every day? - Mayo Clinic",
+    description: "About 11.5 cups (2.7 liters) of fluids a day for women. These recommendations cover fluids from water, other beverages and food. About 20% of daily fluid intake ..."
+  },
+  {
+    link: "https://www.charitywater.org/",
+    title: "Help bring clean and safe water to every person on the planet ...",
+    description: "charity: water is a nonprofit organization bringing clean and safe water to people around the world."
+  },
+  {
+    link: "https://www.epa.gov/environmental-topics/water-topics",
+    title: "Water Topics | US EPA",
+    description: "When the water in our rivers, lakes, and oceans becomes polluted; it can endanger wildlife, make our drinking water unsafe, and threaten the .."
+  },
+  {
+    link: "https://water.org/",
+    title: "Water.org - Water Charity For Safe Water & Sanitation",
+    description: "Water.org is founded by Gary White & Matt Damon. We make it our mission to provide the world with safe water and sanitation through innovative financial ..."
+  },
+  {
+    link: "https://www.worldbank.org/en/topic/water",
+    title: "Water : Development news, research, data | World Bank",
+    description: "Water. As the world's largest multilateral source of financing for water in developing countries, the World Bank is working closely with partners to achieve “A ..."
+  },
+  {
+    link: "https://www.cdc.gov/healthyweight/healthy_eating/water-and-healthier-drinks.html",
+    title: "Water and Healthier Drinks - CDC",
+    description: "Learn the importance of staying hydrated, the health benefits of drinking water, and how to choose healthier drinks."
+  },
+  {
+    link: "https://www.denverwater.org/",
+    title: "Denver Water: Home",
+    description: "Denver Water proudly serves high-quality water and promotes its efficient use to 1.5 million people in the city of Denver and many surrounding suburbs."
+  },
+  {
+    link: "https://water.weather.gov/",
+    title: "NOAA - National Weather Service - Water",
+    description: "National Weather Service Advanced Hydrologic Prediction Service (AHPS)"
+  },
+  {
+    link: "https://www.ewg.org/tapwater/",
+    title: "EWG Tap Water Database",
+    description: "Since 2013, water utilities' testing has found pollutants in Americans' tap water, according to an EWG drinking water quality analysis of more than 31 ..."
+  },
+  {
+    link: "https://www.healthline.com/nutrition/7-health-benefits-of-water",
+    title: "7 Science-Based Health Benefits of Drinking Enough Water",
+    description: "Being dehydrated can negatively affect your body and brain. Here are 7 evidence-based health benefits of drinking water."
+  },
+  {
+    link: "https://www.ready.gov/water",
+    title: "Water | Ready.gov",
+    description: "Following a disaster, clean drinking water may not be available. Learn how to build a water supply that will meet your family's needs during ..."
+  },
+  {
+    link: "https://water.phila.gov/",
+    title: "Philadelphia Water Department",
+    description: "Whether providing safe water for residents to drink, supplying water for industries to manufacture goods, or protecting the region's water resources, ..."
+  },
+  {
+    link: "https://www.un.org/sustainabledevelopment/water-and-sanitation/",
+    title: "Water and Sanitation - the United Nations",
+    description: "Decades of misuse, poor management, overextraction of groundwater and contamination of freshwater supplies have exacerbated water stress. In addition, countries ..."
+  },
+  {
+    link: "https://www.everydayhealth.com/water-health/water-body-health.aspx",
+    title: "7 Health Benefits of Water Backed by Scientific Research",
+    description: "Your body uses water in all its cells, organs, and tissues to help regulate temperature and maintain other bodily functions. Because your body ..."
+  },
+  {
+    link: "https://www.saws.org/",
+    title: "San Antonio Water System: Home",
+    description: "SAWS provides water and wastewater services to more than 2 million customers in the San Antonio region and continues to set the standard for service and ..."
+  },
+  {
+    link: "https://www.wsscwater.com/",
+    title: "WSSC Water: Homepage",
+    description: "WSSC Water delivers clean drinking water to almost 2 million people in Montgomery and Prince George's counties with zero quality violations in 100+ years."
+  },
+  {
+    link: "https://www.worldwaterday.org/",
+    title: "World Water Day 2022",
+    description: "World Water Day, held on 22 March every year since 1993, celebrates water and raises awareness of the 2 billion people living without access to safe water."
+  },
+  {
+    link: "https://www.kcwater.us/",
+    title: "KC Water",
+    description: "Water Quality · Financial Assistance Resources · Report An Issue · Understanding My Bill · Community Outreach · By the Numbers · Latest Tweets."
+  },
+  {
+    link: "https://www.calwater.com/",
+    title: "California Water Service",
+    description: "Home page for California Water Service's customer web site, including a link to the account-management portal."
   }
 ]
