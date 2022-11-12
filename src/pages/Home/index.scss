@@ -9,31 +9,7 @@
   }
 
   &__logo {
-    font: {
-      family: 'Josefin Sans', 'Arial', sans-serif;
-      size: 90px;
-      weight: 500;
-    }
-    height: 70px;
-    line-height: 90px;
     margin-bottom: 30px;
-    text-decoration: none;
-
-    .blue {
-      color: #4285f4;
-    }
-
-    .green {
-      color: #34a853;
-    }
-
-    .red {
-      color: #ea4335;
-    }
-
-    .yellow {
-      color: #fbbc05;
-    }
   }
 
   &__search {
