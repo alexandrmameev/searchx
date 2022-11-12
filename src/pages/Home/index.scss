@@ -14,7 +14,7 @@
     }
     height: 70px;
     line-height: 90px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-decoration: none;
 
     .blue {
@@ -32,5 +32,10 @@
     .yellow {
       color: #fbbc05;
     }
+  }
+
+  &__search {
+    max-width: 584px;
+    width: 100%;
   }
 }
