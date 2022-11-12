@@ -1,0 +1,36 @@
+.home {
+  &__page {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  &__logo {
+    font: {
+      size: 90px;
+      weight: 500;
+    }
+    height: 70px;
+    line-height: 90px;
+    margin-bottom: 20px;
+    text-decoration: none;
+
+    .blue {
+      color: #4285f4;
+    }
+
+    .green {
+      color: #34a853;
+    }
+
+    .red {
+      color: #ea4335;
+    }
+
+    .yellow {
+      color: #fbbc05;
+    }
+  }
+}
