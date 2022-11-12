@@ -24,6 +24,7 @@ const SearchField = ({ value = '' }) => {
         </label>
         <input 
             autoFocus={true}
+            autoComplete="off"
             className="search-field__input"
             id="search-field"
             type="text" 
