@@ -1,0 +1,28 @@
+.search {
+  &__header {
+    border-bottom: 1px solid #ebebeb;
+    padding: 25px 25px 25px 230px;
+    position: relative;
+  }
+
+  &__logo {
+    margin-left: -150px;
+    position: absolute;
+    top: 36px;
+    width: auto;
+  }
+
+  &__search-wrapper {
+    max-width: 650px;
+  }
+
+  &__content {
+    padding: 10px 25px 25px 270px;
+    max-width: 650px;
+  }
+
+  &__info {
+    color: #70757a;
+    margin-bottom: 20px;
+  }
+}

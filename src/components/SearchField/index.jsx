@@ -7,7 +7,7 @@ import './index.scss';
 
 import { ReactComponent as IconSearch } from '../../assets/svg/icon-search.svg';
 
-const SearchField = ({ value = '' }) => {
+const SearchField = ({ value = '', autoFocus }) => {
   const navigate = useNavigate();
 
   const [searchTerm, setSearchTerm] = useState(value);
@@ -23,7 +23,7 @@ const SearchField = ({ value = '' }) => {
           <IconSearch />
         </label>
         <input 
-            autoFocus={true}
+            autoFocus={autoFocus}
             autoComplete="off"
             className="search-field__input"
             id="search-field"
