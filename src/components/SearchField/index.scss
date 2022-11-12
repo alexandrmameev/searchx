@@ -52,9 +52,8 @@
     border-radius: 0;
     box-shadow: none;
     font: {
-      family: 'Josefin Sans', 'Arial', sans-serif;
-      size: 15px;
-      weight: 400;
+      family: 'Arial', sans-serif;
+      size: 16px;
     }
     height: 100%;
     line-height: 24px;
@@ -100,6 +99,9 @@
     background: #fff;
     border-radius: 0 0 24px 24px;
     box-shadow: 0 4px 6px rgba(32, 33, 36, .28);
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 20px;
     position: absolute;
     left: -1px;
     width: calc(100% + 2px);
