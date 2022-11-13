@@ -42,7 +42,7 @@ const SearchField = ({ autoFocus }) => {
 
   return (
     <div 
-      className={`search-field__wrapper${autoCompleteVisibility ? ' autocomplete--opened' : ''}`}
+      className={`search-field__wrapper${autoCompleteVisibility && autoCompleteLength > 0 ? ' autocomplete--opened' : ''}`}
       ref={searchRef}
     >
       <div className="search-field__input-wrapper">
@@ -67,9 +67,6 @@ const SearchField = ({ autoFocus }) => {
           onChange={(e) => {
             setSearchTerm(e.target.value);
             if(e.target.value.length > 0){
-              //if(autoCompleteLength !== 0){
-                console.log(autoCompleteLength); 
-              //}
               setAutoCompleteVisibility(true);
             }
           }}

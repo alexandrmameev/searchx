@@ -51,10 +51,6 @@ const AutoComplete = ({ searchTerm }) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchTerm, termsHistory]);
 
-  useEffect(() => {
-   console.log(termsHistory);
-  }, [termsHistory])
-
   return (
     <>
       {autocompleteData.length > 0 ? (
