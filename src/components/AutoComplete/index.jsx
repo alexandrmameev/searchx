@@ -32,7 +32,7 @@ const AutoComplete = ({ searchTerm }) => {
   useEffect(() => {
     if(searchTerm) {
       // Filter all terms which started with ${searchTerm}
-      let filteredData = searchTerms.filter(item => item.startsWith(searchTerm));
+      let filteredData = searchTerms.filter(item => item.toLowerCase().startsWith(searchTerm.toLowerCase()));
 
       // Sort all terms. Terms added to the history moved to the top.
       filteredData.sort((a, b) => {
