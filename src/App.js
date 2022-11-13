@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Search from './pages/Search';
 
-import NotFound from "./components/NotFound";
+import NotFound from './components/NotFound';
 
 import './App.scss';
 
