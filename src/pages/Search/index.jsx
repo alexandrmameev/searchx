@@ -36,7 +36,7 @@ const Search = () => {
 
     // Get & set the results
     const queryLowerCase = query?.toLowerCase();
-    const filteredResults = searchResults.filter(item => item?.title.toLowerCase().includes(queryLowerCase) || item?.description.toLowerCase().includes(queryLowerCase)).splice(0, 10);
+    const filteredResults = searchResults.filter(item => item?.title.toLowerCase().includes(queryLowerCase) || item?.description.toLowerCase().includes(queryLowerCase));
     setResults(filteredResults);
 
     // Measuring time for finding results
