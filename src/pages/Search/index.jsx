@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useSearchParams  } from 'react-router-dom';
+import { useNavigate, useSearchParams  } from 'react-router-dom';
 
 import SearchField from '../../components/SearchField';
 import SearchList from '../../components/SearchList';
@@ -13,8 +13,8 @@ import './index.scss';
 
 const Search = () => {
   const [ searchParams ] = useSearchParams();
+  const navigate = useNavigate();
   const query = searchParams.get('q');
-  const queryLowerCase = query.toLowerCase();
 
   const { setSearchTerm } = useStateContext();
 
@@ -22,7 +22,11 @@ const Search = () => {
   const [time, setTime] = useState(0);
 
   useEffect(() => {
-    setSearchTerm(query);
+    if(!query) {
+      navigate('/');
+    } else {
+      setSearchTerm(query);
+    }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -31,6 +35,7 @@ const Search = () => {
     const startTime = performance.now();
 
     // Get & set the results
+    const queryLowerCase = query?.toLowerCase();
     const filteredResults = searchResults.filter(item => item?.title.toLowerCase().includes(queryLowerCase) || item?.description.toLowerCase().includes(queryLowerCase)).splice(0, 10);
     setResults(filteredResults);
 
