@@ -90,7 +90,7 @@ const AutoComplete = ({ searchTerm }) => {
                   )}
                 </div>
                 <div 
-                  className="title"
+                  className={`title ${termsHistory.includes(item) ? 'in-history' : ''}`}
                   onClick={() => itemOnClick(item)}
                 >
                   {item}

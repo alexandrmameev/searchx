@@ -47,6 +47,12 @@
       }
     }
 
+    .title {
+      &.in-history {
+        color: #52188c;
+      }
+    }
+
     .icon {
       height: 15px;
       margin: auto;
