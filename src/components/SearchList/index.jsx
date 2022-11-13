@@ -1,17 +1,25 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 
 import Pagination from '../Pagination';
 
 import './index.scss';
 
 const SearchList = ({ items }) => {
+  const [ searchParams ] = useSearchParams();
+  const query = searchParams.get('q');
+
   const [currentPage, setCurrentPage] = useState(1);
   const [resultsPerPage] = useState(10);
 
   const indexOfLastItem = currentPage * resultsPerPage;
   const indexOfFirstItem = indexOfLastItem - resultsPerPage;
   const currentResults = items.slice(indexOfFirstItem, indexOfLastItem);
-  const totalPages = Math.ceil(items.length / resultsPerPage)
+  const totalPages = Math.ceil(items.length / resultsPerPage);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [query]);
 
   return (
     <div className="search-results__block">
