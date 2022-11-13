@@ -26,13 +26,15 @@ const SearchList = ({ items }) => {
           </div>
         ))}
       </div>
-      <div className="search-results__pagination">
-        <Pagination 
-          totalPages={totalPages}
-          currentPage={currentPage}
-          setCurrentPage={setCurrentPage}
-        />
-      </div>
+      {totalPages > 1 && (
+        <div className="search-results__pagination">
+          <Pagination 
+            totalPages={totalPages}
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+          />
+        </div>
+      )}
     </div>
   )
 }
