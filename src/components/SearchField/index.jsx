@@ -12,24 +12,35 @@ const SearchField = ({ autoFocus }) => {
   const navigate = useNavigate();
   const { searchTerm, setSearchTerm, autoCompleteVisibility, setAutoCompleteVisibility, termsHistory, setTermsHistory, autoCompleteLength } = useStateContext();
 
+  // Add ref to the search field wrapper, for handling outside click
   const searchRef = useRef(null);
 
+  // On press Enter
   const onKeyDown = (e) => {
     if(e.key === 'Enter'){
+      // Check if this item isn't in history, if so, add it to the history.
       if(!termsHistory.includes(searchTerm)) setTermsHistory(prev => [...prev, searchTerm]);
+
+      // Hide autocomplete dropdown
       setAutoCompleteVisibility(false);
+
+      // Navigate to search results
       navigate(`/search?q=${searchTerm}`);
     }
   }
 
   useEffect(() => {
+    // Clear input on component load
     setSearchTerm('');
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
+  // Handle click outside of search field
   useEffect(() => {
     function handleClickOutside(e) {
+      // Check if clicked outside
       if (searchRef.current && !searchRef.current.contains(e.target)) {
+        // Hide autocomplete dropdown
         setAutoCompleteVisibility(false);
       }
     }
@@ -60,13 +71,16 @@ const SearchField = ({ autoFocus }) => {
           type="text" 
           value={searchTerm}
           onClick={() => {
-            if(termsHistory.length > 0 || searchTerm.length > 0){
+            // Check if there are something inside history or autocomplete data
+            if(termsHistory.length > 0 || autoCompleteLength > 0){
+              // Show autocomplete dropdown
               setAutoCompleteVisibility(true)
             }
           }}
           onChange={(e) => {
             setSearchTerm(e.target.value);
             if(e.target.value.length > 0){
+              // Show autocomplete only if there is something inside input
               setAutoCompleteVisibility(true);
             }
           }}

@@ -18,6 +18,7 @@ const SearchList = ({ items }) => {
   const totalPages = Math.ceil(items.length / resultsPerPage);
 
   useEffect(() => {
+    // Set current page to first on ${query} change.
     setCurrentPage(1);
   }, [query]);
 

@@ -15,16 +15,26 @@ const AutoComplete = ({ searchTerm }) => {
 
   const [autocompleteData, setAutocompleteData] = useState([]);
 
+  // Click on autocomplete item
   const itemOnClick = (item) => {
     setSearchTerm(item);
+
+    // Add term to the history
     if(!termsHistory.includes(item)) setTermsHistory(prev => [...prev, item]);
+
+    // Hide autocomplete dropdown
     setAutoCompleteVisibility(false);
+
+    // Navigate to search results
     navigate(`/search?q=${item}`);
   }
   
   useEffect(() => {
     if(searchTerm) {
+      // Filter all terms which started with ${searchTerm}
       let filteredData = searchTerms.filter(item => item.startsWith(searchTerm));
+
+      // Sort all terms. Terms added to the history moved to the top.
       filteredData.sort((a, b) => {
         if(termsHistory && termsHistory.includes(a) && termsHistory.includes(b)){
           return a - b;
@@ -36,14 +46,20 @@ const AutoComplete = ({ searchTerm }) => {
           return a - b;
         }
       });
+
+      // Set only first 10 terms
       filteredData = filteredData.slice(0, 10);
       setAutocompleteData(filteredData);
+
+      // Set terms length to show autocomplete dropdown only if there is any terms
       setAutoCompleteLength(filteredData.length);
     } else {
       if(termsHistory.length > 0){
+        // If there is no ${searchTerm} in input, show the history terms. If there are some terms in history.
         setAutocompleteData(termsHistory.slice(0, 10));
         setAutoCompleteLength(termsHistory.length);
       } else {
+        // Or not show anything
         setAutocompleteData([]);
         setAutoCompleteLength(0);
       }

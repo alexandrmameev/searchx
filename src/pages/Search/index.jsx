@@ -23,8 +23,10 @@ const Search = () => {
 
   useEffect(() => {
     if(!query) {
+      // If there is no query in URL, redirect user to homepage.
       navigate('/');
     } else {
+      // Or set this query as searchTerm
       setSearchTerm(query);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
