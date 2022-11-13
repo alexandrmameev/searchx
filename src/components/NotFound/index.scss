@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    padding-bottom: 20%;
+    padding: 0 30px 20vh;
   }
 
   &__row {
@@ -13,12 +13,24 @@
     justify-content: center;
     max-width: 650px;
     width: 100%;
+
+    @media (max-width: 500px){
+      flex-direction: column;
+    }
   }
 
   &__content {
     color: #777;
     font-size: 15px;
     padding-right: 50px;
+    transition: margin .5s, padding .5s;
+
+    @media (max-width: 500px){
+      margin-top: 30px;
+      order: 1;
+      padding-right: 0;
+      text-align: center;
+    }
   }
 
   &__logo {

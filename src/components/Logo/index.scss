@@ -9,6 +9,13 @@
   height: 70px;
   line-height: 90px;
   text-decoration: none;
+  transition: .5s;
+
+  @media (max-width: 500px){
+    height: 50px;
+    font-size: 50px;
+    line-height: 50px;
+  }
 
   &.small {
     height: 30px;

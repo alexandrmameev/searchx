@@ -3,23 +3,59 @@
     border-bottom: 1px solid #ebebeb;
     padding: 25px 25px 25px 230px;
     position: relative;
+    transition: padding .5s;
+
+    @media (max-width: 1024px){
+      align-items: center;
+      display: flex;
+      padding: 25px 30px;
+    }
+
+    @media (max-width: 500px){
+      flex-direction: column;
+    }
   }
 
   &__logo {
     margin-left: -150px;
     position: absolute;
     top: 36px;
+    transition: margin .5s;
     width: auto;
+
+    @media (max-width: 1024px){
+      margin-right: 25px;
+      margin-left: 0;
+      position: relative;
+      top: 5px;
+    }
+
+    @media (max-width: 500px){
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
   }
 
   &__search-wrapper {
     max-width: 650px;
+
+    @media (max-width: 1024px){
+      max-width: none;
+      width: 100%;
+    }
   }
 
   &__content {
     margin-left: 230px;
     max-width: 650px;
     padding: 10px 40px 40px;
+    transition: .5s;
+
+    @media (max-width: 1024px){
+      margin-left: 0;
+      max-width: none;
+      padding: 10px 30px 30px;
+    }
   }
 
   &__info {
@@ -33,6 +69,11 @@
 
     .no-results__img {
       margin-top: 50px;
+      transition: margin .5s;
+
+      @media (max-width: 500px){
+        margin-top: 30px;
+      }
     }
   }
 }
